@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Final</title>
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <!-- Add these links in the head of your HTML document -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <img src="./images/Logo.svg" alt="" />
+      <nav>
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#questions">Questions</a></li>
+          <li><a href="#reviews">Latest Review</a></li>
+          <li><a href="#registration">Registration</a></li>
+          <li><a href="#project-list">Projects</a></li>
+        </ul>
+        <div class="buttons d-flex align-items-center gap-3">
+          <a class="text-success">Log In</a>
+          <button class="btn btn-success">Sign Up</button>
+        </div>
+      </nav>
+      <div class="hamburger" id="hamburger-1">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
+    </header>
+    <div class="menu">
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#questions">Questions</a></li>
+        <li><a href="#reviews">Latest Review</a></li>
+        <li><a href="#registration">Registration</a></li>
+        <li><a href="#project-list">Projects</a></li>
+      </ul>
+    </div>
+    <main>
+      <section id="hero" class="hero">
+        <div id="carouselExample" class="carousel container-sm slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div
+                class="d-flex align-items-center justify-content-center p-3 mobile-flex-col"
+              >
+                <div>
+                  <h1 class="lessons">
+                    Lessons and insights <span>from 8 years</span>
+                  </h1>
+                  <p>
+                    Where to grow your business as a photographer: site or
+                    social media?
+                  </p>
+                  <button class="btn btn-success">Register</button>
+                </div>
+                <img src="./images/Illustration.png" alt="" />
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div
+                class="d-flex align-items-center justify-content-center p-3 mobile-flex-col"
+              >
+                <div>
+                  <p class="w-100 lessons">
+                    The unseen of spending three years at Pixelgrade
+                  </p>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                    sit amet justo ipsum. Sed accumsan quam vitae est varius
+                    fringilla. Pellentesque placerat vestibulum lorem sed porta.
+                    Nullam mattis tristique iaculis. Nullam pulvinar sit amet
+                    risus pretium auctor. Etiam quis massa pulvinar, aliquam
+                    quam vitae, tempus sem. Donec elementum pulvinar odio.
+                  </p>
+                  <button class="btn btn-success">Learn More</button>
+                </div>
+                <img src="./images/rafiki.png" alt="" />
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div
+                class="d-flex align-items-center justify-content-center p-3 mobile-flex-col"
+              >
+                <div>
+                  <p class="lessons">
+                    How to design your site footer like we did
+                  </p>
+                  <p>
+                    Donec a eros justo. Fusce egestas tristique ultrices. Nam
+                    tempor, augue nec tincidunt molestie, massa nunc varius
+                    arcu, at scelerisque elit erat a magna. Donec quis erat at
+                    libero ultrices mollis. In hac habitasse platea dictumst.
+                    Vivamus vehicula leo dui, at porta nisi facilisis finibus.
+                    In euismod augue vitae nisi ultricies, non aliquet urna
+                    tincidunt. Integer in nisi eget nulla commodo faucibus
+                    efficitur quis massa. Praesent felis est, finibus et nisi
+                    ac, hendrerit venenatis libero. Donec consectetur faucibus
+                    ipsum id gravida.
+                  </p>
+                  <button class="btn btn-success">Learn More</button>
+                </div>
+                <img src="./images/pana.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </section>
+      <section id="questions" class="questions">
+        <article class="faq wrapper">
+          <p class="faq-header">F.A.Q</p>
+
+          <div class="accordion">
+            <div class="accordion-item">
+              <div class="accordion-header">
+                What courses does the academy offer in modern technology?
+                <div class="arrow">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      class="arrowDown"
+                      d="M8.14644661,10.1464466 C8.34170876,9.95118446 8.65829124,9.95118446 8.85355339,10.1464466 L12.4989857,13.7981758 L16.1502401,10.1464466 C16.3455022,9.95118446 16.6620847,9.95118446 16.8573469,10.1464466 C17.052609,10.3417088 17.052609,10.6582912 16.8573469,10.8535534 L12.4989857,15.2123894 L8.14644661,10.8535534 C7.95118446,10.6582912 7.95118446,10.3417088 8.14644661,10.1464466 Z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <div class="accordion-body">
+                Our academy offers a diverse range of courses, including web
+                development, social media marketing, HR content, and more.
+                Explore our catalog for a comprehensive list.
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-header">
+                How can I enroll in courses at the academy?
+                <div class="arrow">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      class="arrowDown"
+                      d="M8.14644661,10.1464466 C8.34170876,9.95118446 8.65829124,9.95118446 8.85355339,10.1464466 L12.4989857,13.7981758 L16.1502401,10.1464466 C16.3455022,9.95118446 16.6620847,9.95118446 16.8573469,10.1464466 C17.052609,10.3417088 17.052609,10.6582912 16.8573469,10.8535534 L12.4989857,15.2123894 L8.14644661,10.8535534 C7.95118446,10.6582912 7.95118446,10.3417088 8.14644661,10.1464466 Z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+
+              <div class="accordion-body">
+                Enrolling is simple! Visit our website, choose your desired
+                course, and follow the easy enrollment process. You'll be on
+                your way to mastering modern technologies in no time.
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-header">
+                Is financial aid available for the academy's courses?
+                <div class="arrow">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      class="arrowDown"
+                      d="M8.14644661,10.1464466 C8.34170876,9.95118446 8.65829124,9.95118446 8.85355339,10.1464466 L12.4989857,13.7981758 L16.1502401,10.1464466 C16.3455022,9.95118446 16.6620847,9.95118446 16.8573469,10.1464466 C17.052609,10.3417088 17.052609,10.6582912 16.8573469,10.8535534 L12.4989857,15.2123894 L8.14644661,10.8535534 C7.95118446,10.6582912 7.95118446,10.3417088 8.14644661,10.1464466 Z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <div class="accordion-body">
+                Yes, we understand the importance of accessibility. We offer
+                various financial aid options and scholarships. Check our
+                website or contact our support team for more details on
+                available assistance.
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+      <section class="reviews" id="reviews">
+        <p style="text-align: center; font-size: 48px">Latest Review</p>
+
+        <article id="lastest_review" class="lastest_review container"></article>
+      </section>
+      <section class="registration" id="registration">
+        <p style="text-align: center; font-size: 48px">Register</p>
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label"
+              >Email address</label
+            >
+            <input
+              required
+              type="email"
+              class="form-control"
+              id="exampleInputEmail1"
+              aria-describedby="emailHelp"
+            />
+            <div id="emailHelp" class="text-danger form-text"></div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label"
+              >Password</label
+            >
+            <div class="position-relative d-flex align-items-center">
+              <input
+                required
+                type="password"
+                class="form-control"
+                id="exampleInputPassword1"
+              />
+              <i class="bi bi-eye-slash" id="togglePassword"></i>
+            </div>
+          </div>
+          <div class="mb-3 form-check">
+            <input
+              required
+              type="checkbox"
+              class="form-check-input"
+              id="exampleCheck1"
+            />
+            <label class="form-check-label" for="exampleCheck1"
+              >I agree terms and conditions</label
+            >
+          </div>
+          <button
+            type="submit"
+            onsubmit="ValidateEmail()"
+            class="btn btn-primary validateButton"
+          >
+            Submit
+          </button>
+        </form>
+      </section>
+      <section class="project-list" id="project-list">
+        <div class="filters">
+          <span class="filter" data-filter="dev">DEV</span>
+          <span class="filter" data-filter="design">DESIGN</span>
+          <span class="filter" data-filter="all">ALL</span>
+        </div>
+
+        <div class="projects">
+          <div class="project development" data-filter="dev">Development 1</div>
+          <div class="project" data-filter="design">DESIGN 1</div>
+          <div class="project development" data-filter="dev">Development 2</div>
+          <div class="project development hide" data-filter="dev">
+            Development 3
+          </div>
+          <div class="project" data-filter="design">DESIGN 2</div>
+          <div class="project development" data-filter="dev">Development 4</div>
+        </div>
+      </section>
+    </main>
+    <script type="module" src="./script/app.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,420 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+body {
+  background-color: #f5f7fa;
+}
+.no-scroll {
+  overflow: hidden;
+}
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 24px;
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+
+  -webkit-transition: all ease-out 0.5s;
+  -moz-transition: all ease-out 0.5s;
+  -o-transition: all ease-out 0.5s;
+  transition: all ease-out 0.5s;
+}
+a {
+  color: #18191f !important;
+  text-decoration: none !important;
+  font-size: 14px !important;
+
+  font-weight: 400;
+}
+.burger-menu {
+  transform: translate(-50%, -50%);
+  width: 25px;
+  height: auto;
+  background: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 2px;
+}
+.menu.show-menu {
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+  position: absolute;
+  background: #263238;
+  gap: 30px;
+  padding-top: 20%;
+  display: flex;
+  justify-content: center;
+}
+.menu a {
+  color: white !important;
+}
+.hamburger .line {
+  width: 50px;
+  height: 5px;
+  background-color: #000000;
+  display: block;
+  margin: 8px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#hamburger-1.is-active .line:nth-child(2) {
+  opacity: 0;
+}
+
+#hamburger-1.is-active .line:nth-child(1) {
+  -webkit-transform: translateY(13px) rotate(45deg);
+  -ms-transform: translateY(13px) rotate(45deg);
+  -o-transform: translateY(13px) rotate(45deg);
+  transform: translateY(13px) rotate(45deg);
+}
+
+#hamburger-1.is-active .line:nth-child(3) {
+  -webkit-transform: translateY(-13px) rotate(-45deg);
+  -ms-transform: translateY(-13px) rotate(-45deg);
+  -o-transform: translateY(-13px) rotate(-45deg);
+  transform: translateY(-13px) rotate(-45deg);
+}
+.hamburger {
+  display: block;
+}
+.menu {
+  display: none;
+}
+.activate {
+  background-color: #f5f7fa74;
+}
+nav {
+  display: flex;
+  gap: 48px;
+  align-items: center;
+}
+nav ul {
+  display: flex;
+  gap: 24px;
+  margin: 0;
+}
+li {
+  list-style: none;
+}
+main {
+  padding-top: 88px;
+}
+#hero {
+  display: flex;
+  gap: 104px;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(133, 133, 133);
+}
+.carousel {
+  width: 1200px;
+  margin: 0 auto;
+}
+.carousel-item img {
+  height: 500px;
+}
+#hero .lessons {
+  color: #4d4d4d;
+  width: 70%;
+  font-size: 34px;
+  font-weight: 600;
+}
+#hero p {
+  margin-block: 16px 32px;
+}
+#hero h1 span {
+  color: #4caf4f;
+}
+
+/*Accordion*/
+.faq {
+  padding: 30px 40px;
+  margin-top: 75px;
+  margin-bottom: 32px;
+  width: 960px;
+  margin-inline: auto;
+}
+.questions {
+  margin-top: 28px;
+}
+
+.accordion-header {
+  font-size: 18px;
+  padding-block: 27px;
+  padding-inline: 18px;
+  border-bottom: 1px solid #cccccc37;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+}
+.faq-header {
+  text-align: center;
+  font-size: 48px;
+}
+
+.accordion-body {
+  display: none;
+  padding-bottom: 30px;
+}
+.arrow {
+  width: 24px;
+  height: 24px;
+}
+.rotate-180 {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease;
+}
+
+.accordion-item.active-b {
+  border: none;
+}
+
+.accordion-body.active-b {
+  display: block;
+  border-bottom: 1px solid #cccccc37;
+}
+.border-none {
+  border: none;
+}
+a {
+  transition-duration: 300ms;
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: 700;
+}
+.lastest_review {
+  display: flex;
+  justify-content: center;
+  gap: 48px;
+  margin-block: 64px;
+}
+.registration form {
+  width: 580px;
+  margin: 0 auto;
+}
+.registration {
+  padding-block: 108px;
+}
+#togglePassword {
+  position: absolute;
+  right: 0.75rem;
+  cursor: pointer;
+}
+.registration,
+.questions {
+  background-color: #f5f7fa;
+}
+
+/*Filter*/
+
+.hide {
+  /* You can play with the seconds to change the "animation" */
+  animation: hide 0.3s ease 0s 1 normal forwards;
+  transform-origin: center;
+}
+.show {
+  /* You can play with the seconds to change the "animation" */
+  animation: show 0.3s ease 0s 1 normal forwards;
+  transform-origin: center;
+}
+
+@keyframes hide {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+    width: 0;
+    height: 0;
+    margin: 0;
+  }
+}
+@keyframes show {
+  0% {
+    transform: scale(0);
+    width: 0;
+    height: 0;
+    margin: 0;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+/*  // Needed for filters */
+
+/* For decoration only */
+body {
+  font-family: sans-serif;
+}
+.projects {
+  display: flex;
+  background: gray;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+}
+.project {
+  background: rebeccapurple;
+  width: 230px;
+  height: 100px;
+  margin: 20px;
+  padding-top: 20px;
+  color: white;
+
+  text-align: center;
+}
+.project.development {
+  background-color: #4caf4f;
+}
+.filters {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+}
+.filter {
+  margin: 20px;
+}
+.filter:hover {
+  cursor: pointer;
+}
+.burger-menu {
+  display: none;
+}
+/* Responsive */
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .faq {
+    width: 320px;
+    padding: 30px 16px;
+  }
+  nav {
+    display: none;
+  }
+  main {
+    padding-top: 72px;
+  }
+  .burger-menu {
+    display: block;
+  }
+  .mobile-flex-col {
+    flex-direction: column;
+  }
+  .registration {
+    padding-inline: 16px;
+  }
+  .registration form {
+    width: 100%;
+  }
+  .lastest_review,
+  .projects {
+    flex-wrap: wrap;
+  }
+  header {
+    display: flex;
+    justify-content: space-around;
+    padding-block: 24px;
+    padding-inline: 0;
+  }
+  .accordion-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+  }
+  .accordion-body {
+    font-size: 12px;
+  }
+  .carousel-item.active {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+  #hero .lessons {
+    font-size: 32px;
+    line-height: normal;
+    width: 100%;
+  }
+  #hero img {
+    width: 100%;
+  }
+  .carousel {
+    padding-inline: 52px;
+  }
+  #hero p {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+  .faq {
+    width: 90%;
+  }
+  .mobile-flex-col {
+    flex-direction: column;
+  }
+  .accordion-header {
+    justify-content: space-between;
+  }
+  .lastest_review {
+    flex-wrap: wrap;
+  }
+  .card {
+    width: 14rem !important;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .faq {
+    width: 90%;
+    padding: 30px 16px;
+  }
+  nav {
+    display: none;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+  .burger-menu {
+    display: block;
+  }
+  #hero .lessons,
+  #hero h1 {
+    font-size: 32px;
+    line-height: normal;
+    width: 100%;
+  }
+  #hero img {
+    width: 100%;
+  }
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 5% !important;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .hamburger {
+    display: none;
+  }
+  .menu {
+    display: none;
+  }
+  .menu.show-menu {
+    display: none;
+  }
+}
